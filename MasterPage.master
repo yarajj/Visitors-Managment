@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+    <meta charset="utf-8"/>
+    <title>نظام إدارة الزوار
+        </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link rel="stylesheet" href="App_Themes/Theme1/css/style.css"/>
+    </asp:ContentPlaceHolder>
+</head>
+    
+    <body id="bg">
+
+
+      <img src="images/logo.png" style="float: right;"/> 
+  
+    <div class="menu-bar"> 
+        <ul>
+<li style="float: right;"> <a href="Default.aspx"> الصفحة الرئيسية </a></li>
+<li style="float: right;"><a href="Newrequest.aspx">طلب جديد </a></li>
+<li style="float: right;"><a href="Myrequests.aspx">طلباتي السابقة</a></li>
+<li style="float: right;"><a href="Contact.aspx">تواصل معنا</a></li>
+<li style="float: right;"><a href="logout.aspx"> تسجيل خروج</a></li>
+
+           
+        </ul>      
+        </div>
+        <form runat="server">
+        
+
+                   	<asp:ContentPlaceHolder id="ContentPlaceHolder" runat="server">
+           
+                </asp:ContentPlaceHolder>
+                  	<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+         <br />
+          <div class="footer">
+        <p class="text-center">تقنية المعلومات © 2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ITDep@gcc-sg.org : لأي إستفسار أو ملاحظة&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    www.gcc-sg.org  </p>
+   
+           </div>
+            </form>
+              </body>    
+</html>
+
+
+
+
+
